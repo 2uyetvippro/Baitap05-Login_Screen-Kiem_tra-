@@ -19,6 +19,7 @@ const UselessTextInput = () => {
                 onChangeText={onChangeText1}
                 value={text1}
                 placeholder="Password"
+                secureTextEntry={true}
 
             />
         </View>
