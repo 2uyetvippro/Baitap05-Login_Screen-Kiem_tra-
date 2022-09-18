@@ -1,11 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
+import Nutnhan from './manhinhlogin/nutnhan';
+import Nhap from './manhinhlogin/nhap';
+import Link  from './manhinhlogin/link';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      
+      <Nhap/>
+
+      <Nutnhan/>
+
+      <Link/>
+
+
     </View>
   );
 }
@@ -13,8 +22,10 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    display: 'flex',
+    flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor : 'rgb(222, 226, 222)',
   },
 });
